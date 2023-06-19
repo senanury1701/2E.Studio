@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Games.css">  
+  <title>2E Studio Games</title>
+</head>
+<body>
+  <div  onload="closed()"  id="closedVideo">
+          <video  muted  autoplay >
+              <source src="anim.-pict/cks.webm"> 
+          </video>
+  </div>
+    
+  <nav>
+    <div class="menu">
+        <video  onclick="yanMenuAc()" id="icon" style="width: 50px; height: 50px;"  muted loop src="anim.-pict/buttonAnim.webm" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video></video>
+        <img class="logo" src="anim.-pict/2EWhite.png" alt="">          
+    </div>
+  </nav>
+      <div class="background-image"> </div>
+
+  <section>
+
+    <div class="content"><br><br>
+      <div class="first-game">
+        <a target="_blank" href="https://store.steampowered.com/app/1946650/hehe/"><img src="anim.-pict/header.jpg" alt=""  src=""></a>
+        <iframe width="840" height="472.5" src="https://www.youtube.com/embed/SPc1IIR9llA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="widget" src="https://store.steampowered.com/widget/1946650/" frameborder="0" width="646" height="190"></iframe>
+      </div>    <br><br> <br><br>
+      <div class="second-game">
+        <a href="https://store.steampowered.com/app/2269530/Escape_From_Islands/"><img src="anim.-pict/header (1).jpg" alt=""></a>
+        <iframe width="840" height="472.5" src="https://www.youtube.com/embed/j3AO-NWMZ-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe class="widget" src="https://store.steampowered.com/widget/2269530/" frameborder="0" width="646" height="190"></iframe>
+      </div>  <br><br><br><br>
+      <div class="third-game">
+        <a href="https://store.steampowered.com/app/2183790/BadDraw/"><img src="anim.-pict/header (2).jpg" alt=""></a>
+        <iframe width="840" height="472.5" src="https://www.youtube.com/embed/JctXtjd7mJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen ></iframe>
+      <iframe class="widget" src="https://store.steampowered.com/widget/2183790/" frameborder="0" width="646" height="190"></iframe>
+      </div>  <br><br><br><br>
+    </div>
+  </section>
+
+
+  
+  <aside  id="yan-menu">
+    <video class="firstVideo" muted  autoplay >
+        <source src="anim.-pict/grs.webm"> 
+    </video>
+
+    <div class="asidemenu">   
+      <a  id="index" href="index.html"> Home Page </a>
+      <a  id="Team" href="Team.html"> Team</a>
+      <a  id="Games" href="Games.html"> Games </a>
+    </div>
+  </aside>
+
+  <script>
+
+
+       function yanMenuAc() {
+      var yanMenu = document.getElementById("yan-menu");
+      var rollbody = document.querySelector("body");
+        yanMenu.style.display = "block";
+        rollbody.style.overflow ="hidden";
+    }
+ 
+
+    setTimeout(function() {
+     var yazi1 = document.getElementById("index");
+    yazi1.style.display = "block";
+    }, 3000); 
+
+    setTimeout(function() {
+     var yazi2 = document.getElementById("Team");
+      yazi2.style.display = "block";
+    }, 3500); 
+
+    setTimeout(function() {
+    var yazi3 = document.getElementById("Games");
+    yazi3.style.display = "block";
+    }, 4000);
+
+
+
+
+  function playVideo(element) {
+        element.play();
+      }
+    
+  function pauseVideo(element) {
+    element.pause();
+  }
+</script>   
+
+</body>
+</html>
+
+

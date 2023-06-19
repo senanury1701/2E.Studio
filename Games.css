@@ -1,0 +1,268 @@
+*
+{
+    
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+body
+{
+    background-color: #ffffff00;
+
+    
+}
+#closedVideo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 9999;
+    display: none;
+    
+}
+
+nav
+{
+    background: linear-gradient(#1d180f, rgba(0, 0, 0, 0.082) );
+    padding: 10px;
+}
+.menu
+{
+    margin: 0px 20px;
+    background-color: transparent;
+
+}
+
+.logo
+{
+    width: 100px;
+    border-radius: 10px;
+    float: right;
+    right: 20px;
+    filter: brightness(0);
+}
+
+.games h1
+{
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+.thegames 
+{
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    
+   
+}
+.thegames a
+{
+    padding: 0px 10px 0px 10px;
+}
+.thegames img
+{
+    
+    width: 100%;
+    align-items: center;
+    border-radius: 25px;
+    max-height: 200px;
+    max-width: 400px;
+    box-shadow: 10px 10px 10px 5px rgba(0, 0, 0, 0.521);
+    margin-bottom: 35px;
+    
+
+}
+
+#icon
+{
+
+    cursor: pointer;
+}
+
+#yan-menu
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+    color: white;
+    display: none;
+    
+    
+}
+#yan-menu .firstVideo
+{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;
+    background-color: transparent;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('anim.-pict/backgroundgames.png');
+  background-position: center;
+  z-index: -99;
+  filter: brightness(0.9);
+}
+
+section
+{
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+
+  
+}
+.content
+{
+  width: 100%;
+}
+.first-game , .third-game
+{
+  
+  height: 500px;
+  position: relative;
+
+}
+.first-game img , .third-game img
+{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 35%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  box-shadow: #0000002d 15px 15px;
+  border: solid 2px black;
+}
+.first-game img:hover , .third-game img:hover
+{
+  transform: scale(1.1);  
+  box-shadow: none ;
+}
+.first-game iframe , .third-game iframe
+{
+  
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin-left: 2%;
+ 
+ 
+}
+.first-game .widget, .third-game .widget
+{
+
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 45%;
+  max-width: 800px;
+  height: 200px;
+  
+}
+
+.second-game
+{
+  
+  height: 500px;
+  position: relative;
+  background-color: rgba(29, 24, 15, 0.116);
+
+}
+.second-game img
+{
+  margin-top: 2%;
+  margin-left: 8%;
+  width: 35%;
+  max-width: 500px;
+  margin-bottom: 15px;
+  box-shadow: #0000002d 15px 15px;
+  border: solid 2px black;
+}
+.second-game img:hover
+{
+  transform: scale(1.1);  
+  box-shadow: none ;
+}
+.second-game iframe
+{
+  
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-right: 2%;
+ 
+ 
+}
+.second-game .widget
+{
+
+  position: absolute; 
+  bottom: 0; 
+  right: 0; 
+  width: 45%;
+  max-width: 800px;
+  height: 200px;
+  
+}
+
+
+
+
+
+
+
+.asidemenu
+{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+
+}
+
+.asidemenu a{
+    display: flex;
+    text-align: center;
+    font-size: 100px;
+    padding: 50px;
+    text-decoration: none;    
+    display: none;
+    color: white;
+}
+.asidemenu a:hover
+{
+    background-color: rgba(32, 32, 32, 0.678);
+}
+.asidemenu button{
+    display: flex;
+    text-align: center;
+    text-decoration: none;    
+    display: none;
+}
+.pict1
+{
+    display: flex;
+    z-index: 10;
+
+}
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Team.css">    
+    <title>2E Studio Team</title>
+</head>
+<body>
+    <div  onload="closed()"  id="closedVideo">
+            <video  muted  autoplay >
+                <source src="anim.-pict/cks.webm"> 
+            </video>
+    </div>
+    
+    <nav>
+        <div class="menu">
+            <video  onclick="yanMenuAc()" id="icon" style="width: 50px; height: 50px;"  muted loop src="anim.-pict/buttonAnim.webm" onmouseover="playVideo(this)" onmouseout="pauseVideo(this)"></video></video>
+            <img class="logo" src="anim.-pict/2EWhite.png" alt="">          
+        </div>
+    </nav>
+    <section class="vid-intro">
+        <div class="video-container"> <video muted loop autoplay >
+            <source src="anim.-pict/contakct_BG.mp4"> 
+        </video> </div>
+
+    <aside  id="yan-menu">
+        <video class="firstVideo" muted  autoplay >
+            <source src="anim.-pict/grs.webm"> 
+        </video>
+
+        <div class="asidemenu">
+            <a  id="index" href="index.html"> Home Page </a>
+            <a  id="Team" href="Team.html"> Team</a>
+            <a  id="Games" href="Games.html"> Games </a>
+        </div>
+    </aside>
+
+    <section >
+        <div class="flip-card">
+            <div class="flip-card-Inner" >
+                <div class="flip-card-front">
+                    <img src="anim.-pict/eness.jpeg" alt="">                
+                </div>
+                <div class="flip-card-back">
+                    <br>
+                    <h1>Enes ERBIL</h1> <br>
+                    <h3>Game Developer</h3><br>
+                    <a target="_blank" href="https://instagram.com/enesserbill?igshid=MzNlNGNkZWQ4Mg=="><img src="anim.-pict/instaicons.png" alt=""></a> <br>
+                    <a target="_blank" href="https://www.linkedin.com/in/enes-erbil-410631265"><img src="anim.-pict/linkedinicon.png" alt=""></a><br>
+                    <a target="_blank" href="https://youtube.com/@2esama"><img src="anim.-pict/youtubeicon.png" alt=""></a>
+                </div>
+            </div>        
+        </div >
+        <div class="flip-crd">
+            <div class="flip-card-Inner" >
+                <div class="flip-card-front">
+                    <img src="anim.-pict/ssena.jpg" alt="">                
+                </div>
+                <div class="flip-card-back">
+                    <br>
+                    <h1>Sena Nur YILDIRIM</h1> <br>
+                    <h3>Frontend Developer</h3> <br>
+                    <a target="_blank" href="https://instagram.com/senammnurr?igshid=NGExMmI2YTkyZg=="><img src="anim.-pict/instaicons.png" alt=""></a> <br>
+                    <a href="https://www.linkedin.com/in/sena-nur-y%C4%B1ld%C4%B1r%C4%B1m-101b35269"><img src="anim.-pict/linkedinicon.png" alt=""></a>
+
+                </div>
+            </div>                     
+        </div>
+    </section>
+
+    <footer>
+        <h1>TEAM</h1>
+    </footer>
+    <script>
+       function yanMenuAc() {
+      var yanMenu = document.getElementById("yan-menu");
+        yanMenu.style.display = "block";
+    }
+
+    setTimeout(function() {
+     var yazi1 = document.getElementById("index");
+    yazi1.style.display = "block";
+    }, 3000); 
+
+    setTimeout(function() {
+     var yazi2 = document.getElementById("Team");
+      yazi2.style.display = "block";
+    }, 3500); 
+
+    setTimeout(function() {
+    var yazi3 = document.getElementById("Games");
+    yazi3.style.display = "block";
+    }, 4000);
+
+    function playVideo(element) {
+      element.play();
+    }
+    
+    function pauseVideo(element) {
+      element.pause();
+    }
+
+    </script>
+    
+</body>
+</html>
